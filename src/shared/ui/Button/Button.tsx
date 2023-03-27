@@ -5,12 +5,14 @@ import styles from './Button.module.css';
 type BtnPropsType = {
   children: string
   direction: string;
+  // eslint-disable-next-line react/require-default-props
+  onClick?: () => void
 };
 
 function Button(props: BtnPropsType) {
-  const { children, direction } = props;
+  const { children, direction, onClick } = props;
   return (
-    <Link to={direction} className={styles.button}>
+    <Link to={direction} onClick={onClick} className={styles.button}>
       {children}
     </Link>
   );

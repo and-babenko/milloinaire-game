@@ -9,6 +9,7 @@ import {
 } from 'modules/QuestionModel';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router';
+import { startNewGame } from 'modules/QuestionModel/store/rulesSlice';
 import styles from './StartPage.module.css';
 
 function HeaderText({ path }: { path: string }): JSX.Element {
@@ -26,13 +27,6 @@ function HeaderText({ path }: { path: string }): JSX.Element {
     );
   }
   return <h1 className={styles.title}>Who wants to be a millionaire?</h1>;
-}
-
-function ButtonWithText({ path }: { path: string }): JSX.Element {
-  if (path === '/results') {
-    return <Button direction="/questions">Try Again</Button>;
-  }
-  return <Button direction="/questions">Start</Button>;
 }
 
 function StartPage() {
@@ -67,6 +61,10 @@ function StartPage() {
     dispatch(getQuestions());
   }, []);
 
+  const btnHandler = () => {
+    dispatch(startNewGame());
+  };
+
   return (
     <div className={styles.startPage}>
       {combinedLoading === 'pending' ? <Spinner /> : ''}
@@ -74,7 +72,7 @@ function StartPage() {
         <img src={hand} className={styles.image} alt="Millionaire Game" />
         <div className={styles.content}>
           <HeaderText path={location} />
-          <ButtonWithText path={location} />
+          <Button onClick={btnHandler} direction="/questions">{location === '/results' ? 'Try Again' : 'Start'}</Button>
         </div>
       </div>
     </div>

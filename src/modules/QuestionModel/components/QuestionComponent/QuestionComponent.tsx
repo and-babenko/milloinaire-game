@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router';
 import AnswerItem from 'shared/ui/AnswerItem';
 import { getQuestionById } from '../../store/questionsSlice';
 import {
-  getCurrentRound, updateLevel, getTotalRounds, startNewGame,
+  getCurrentRound, updateLevel, getTotalRounds,
 } from '../../store/rulesSlice';
 import styles from './QuestionComponent.module.css';
 
@@ -20,10 +20,6 @@ function QuestionComponent() {
   const question = useSelector(getQuestionById(currentRound));
   const [chosen, setChosen] = useState(false); // For preventing reselection
   const [showAnswersColors, setAnswersColors] = useState(false); // Show answers colors trigger
-
-  useEffect(() => {
-    dispatch(startNewGame());
-  }, []);
 
   const winnerChecker = (isCorrect: boolean) => {
     setTimeout(() => {

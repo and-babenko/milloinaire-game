@@ -14,7 +14,8 @@ function RoundItem({ children, status }: RoundProp) {
   useEffect(() => {
     if (status === 'active') statusClassName.current = styles.active;
     if (status === 'passed') statusClassName.current = styles.passed;
-  }, [status]);
+    if (status === 'future') statusClassName.current = '';
+  });
 
   return (
     <div className={`${styles.roundContainer} ${statusClassName.current}`}>
