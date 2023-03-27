@@ -13,8 +13,8 @@ function RoundsComponent() {
     .slice(1, totalRounds + 1)
     .map((item, idx) => {
       let itemStatus: StatusValueType = 'future';
-      if (idx < currentRound - 1) itemStatus = 'passed';
-      if (idx === currentRound - 1) itemStatus = 'active';
+      if (idx < currentRound) itemStatus = 'passed';
+      if (idx === currentRound) itemStatus = 'active';
 
       return (<RoundItem key={item} status={itemStatus}>{item}</RoundItem>);
     })

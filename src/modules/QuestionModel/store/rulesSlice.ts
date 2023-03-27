@@ -30,13 +30,15 @@ export const rulesStore = createSlice({
     updateLevel: (state) => {
       state.currentRound += 1;
     },
+    startNewGame: (state) => {
+      state.currentRound = 1;
+    },
   },
 
   extraReducers: (builder) => {
     builder.addCase(getRules.pending, (state) => {
       state.rounds = 0;
       state.roundsPrizes = [];
-      state.currentRound = 1;
       state.loadingIndicator = LoadingStatus.LOADING;
     });
     builder.addCase(getRules.rejected, (state) => {
@@ -50,12 +52,11 @@ export const rulesStore = createSlice({
       const { rounds, roundsPrizes } = action.payload;
       state.rounds = rounds;
       state.roundsPrizes = roundsPrizes;
-      state.currentRound = 1;
     });
   },
 });
 
-export const { updateLevel } = rulesStore.actions;
+export const { updateLevel, startNewGame } = rulesStore.actions;
 export const rulesSelector = (state: RootState) => state.rulesReducer;
 export const getCurrentRound = (state: RootState) => state.rulesReducer.currentRound;
 export const getTotalRounds = (state: RootState) => state.rulesReducer.rounds;

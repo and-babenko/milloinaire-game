@@ -116,7 +116,7 @@
   },
   {
     "id": 6,
-    "text": "Which function in JS is used to output text to the screen?",
+    "text": "Which function in JS is used to output text to the console?",
     "difficulty": 3,
     "answers": [
       {
@@ -162,16 +162,16 @@
   },
   {
     "id": 7,
-    "text": "Which operator is used to compare values for equality in JavaScript?",
+    "text": "Which operator is used to compare values for strict equality in JavaScript?",
     "difficulty": 3,
     "answers": [
       {
         "text": "==",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "text": "===",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "text": "=",
@@ -212,15 +212,15 @@
     "difficulty": 3,
     "answers": [
       {
-        "text": " The global object",
+        "text": "The global object",
         "isCorrect": false
       },
       {
-        "text": "The parent function",
+        "text": "Empty object",
         "isCorrect": false
       },
       {
-        "text": " The current object",
+        "text": "The current object",
         "isCorrect": true
       },
       {
