@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import styles from './RoundItem.module.css';
 
 export type StatusValueType = 'future' | 'active' | 'passed';
@@ -9,16 +9,14 @@ type RoundProp = {
 };
 
 function RoundItem({ children, status }: RoundProp) {
-  const statusClassName = useRef<string>('');
-
-  useEffect(() => {
-    if (status === 'active') statusClassName.current = styles.active;
-    if (status === 'passed') statusClassName.current = styles.passed;
-    if (status === 'future') statusClassName.current = '';
-  });
+  const calculateClassName = () => {
+    if (status && status === 'active') return styles.active;
+    if (status && status === 'passed') return styles.passed;
+    return '';
+  };
 
   return (
-    <div className={`${styles.roundContainer} ${statusClassName.current}`}>
+    <div className={`${styles.roundContainer} ${calculateClassName()}`}>
       <div className={styles.roundBorder}>
         <div className={styles.roundContent}>
           $

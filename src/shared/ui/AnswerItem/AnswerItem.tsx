@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import styles from './AnswerItem.module.css';
 
 type AnswerItemPropsType = {
@@ -14,9 +14,7 @@ function AnswerItem(props: AnswerItemPropsType) {
     children, idx, isCorrect, showColor, clickHandler,
   } = props;
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [showColors, setShowColors] = useState(false);
-  const statusClassName = useRef<string>('');
+  const [isActive, setActive] = useState(false);
 
   const getLetter = () => {
     let letterNumber = idx + 1;
@@ -28,27 +26,24 @@ function AnswerItem(props: AnswerItemPropsType) {
     return letter;
   };
 
-  useEffect(() => {
-    if (showColor) {
-      if (isCorrect) {
-        statusClassName.current = styles.correct;
-      } else {
-        statusClassName.current = styles.wrong;
-      }
-      setShowColors(true);
-    } else {
-      statusClassName.current = '';
-      setShowColors(false);
-    }
-  }, [showColor]);
+  const isCorrectClass = () => {
+    if (isActive && !showColor) return styles.selected;
+    if (showColor && isCorrect) return styles.correct;
+    if (showColor && !isCorrect) return styles.wrong;
+    return '';
+  };
 
   const onBtnClick = () => {
-    statusClassName.current = styles.selected;
+    setActive(true);
     clickHandler();
   };
 
   return (
-    <button type="button" onClick={onBtnClick} className={`${styles.answerContainer} ${statusClassName.current}`}>
+    <button
+      type="button"
+      onClick={onBtnClick}
+      className={`${styles.answerContainer} ${isCorrectClass()}`}
+    >
       <div className={styles.answerBorder}>
         <div className={styles.answerContent}>
           <b>{getLetter()}</b>

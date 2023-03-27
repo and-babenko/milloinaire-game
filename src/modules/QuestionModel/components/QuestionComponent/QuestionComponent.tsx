@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router';
@@ -8,7 +9,7 @@ import {
 } from '../../store/rulesSlice';
 import styles from './QuestionComponent.module.css';
 
-const delayTimer = 1300;
+const delayTimer = 100;
 
 function QuestionComponent() {
   const dispatch = useDispatch();
