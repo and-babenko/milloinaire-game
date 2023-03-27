@@ -2,7 +2,6 @@
   "name": "siema",
   "version": "1.0",
   "private": true,
-  "homepage": "https://and-babenko.github.io/siema-test/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
     "@testing-library/jest-dom": "^5.16.5",
