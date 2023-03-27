@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/siema-test/static/css/main.65f2a8b6.css",
+    "main.js": "/siema-test/static/js/main.fb92ba43.js",
+    "StartPage.css": "/siema-test/static/css/StartPage.0711ca45.chunk.css",
+    "StartPage.js": "/siema-test/static/js/StartPage.aad40524.chunk.js",
+    "QuestionsPage.css": "/siema-test/static/css/QuestionsPage.39638a71.chunk.css",
+    "QuestionsPage.js": "/siema-test/static/js/QuestionsPage.4dd84504.chunk.js",
+    "NotFoundPage.css": "/siema-test/static/css/NotFoundPage.daa34b09.chunk.css",
+    "NotFoundPage.js": "/siema-test/static/js/NotFoundPage.cf2180e5.chunk.js",
+    "static/media/hand.svg": "/siema-test/static/media/hand.dbb74bc402dc07b02a0d5ab983fa9354.svg",
+    "index.html": "/siema-test/index.html",
+    "static/media/Close.svg": "/siema-test/static/media/Close.09d59f74245cb6663a15c0fd40d2ea67.svg",
+    "static/media/Menu.svg": "/siema-test/static/media/Menu.2e4db3a986ee50d80ed0a331fba7eda5.svg",
+    "main.65f2a8b6.css.map": "/siema-test/static/css/main.65f2a8b6.css.map",
+    "main.fb92ba43.js.map": "/siema-test/static/js/main.fb92ba43.js.map",
+    "StartPage.0711ca45.chunk.css.map": "/siema-test/static/css/StartPage.0711ca45.chunk.css.map",
+    "StartPage.aad40524.chunk.js.map": "/siema-test/static/js/StartPage.aad40524.chunk.js.map",
+    "QuestionsPage.39638a71.chunk.css.map": "/siema-test/static/css/QuestionsPage.39638a71.chunk.css.map",
+    "QuestionsPage.4dd84504.chunk.js.map": "/siema-test/static/js/QuestionsPage.4dd84504.chunk.js.map",
+    "NotFoundPage.daa34b09.chunk.css.map": "/siema-test/static/css/NotFoundPage.daa34b09.chunk.css.map",
+    "NotFoundPage.cf2180e5.chunk.js.map": "/siema-test/static/js/NotFoundPage.cf2180e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65f2a8b6.css",
+    "static/js/main.fb92ba43.js"
+  ]
+}

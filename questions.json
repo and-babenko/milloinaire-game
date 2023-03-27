@@ -1,0 +1,301 @@
+[
+  {
+    "id": 1,
+    "text": "What color is the sky on a clear day?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "text": "green",
+        "isCorrect": false
+      },
+      {
+        "text": "red",
+        "isCorrect": false
+      },
+      {
+        "text": "blue",
+        "isCorrect": true
+      },
+      {
+        "text": "black",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "Which animal can fly?",
+    "difficulty": 1,
+    "answers": [
+      {
+        "text": "cat",
+        "isCorrect": false
+      },
+      {
+        "text": "dog",
+        "isCorrect": false
+      },
+      {
+        "text": "bird",
+        "isCorrect": true
+      },
+      {
+        "text": "fish",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "text": "Which of these plants does not bloom?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "text": "rose",
+        "isCorrect": false
+      },
+      {
+        "text": "spruce",
+        "isCorrect": true
+      },
+      {
+        "text": "tulip",
+        "isCorrect": false
+      },
+      {
+        "text": "lilac",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "What is the process called by which plants obtain food from sunlight?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "text": "respiration",
+        "isCorrect": false
+      },
+      {
+        "text": "transpiration",
+        "isCorrect": false
+      },
+      {
+        "text": "photosynthesis",
+        "isCorrect": true
+      },
+      {
+        "text": "flowering",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "text": "Which element in the periodic table has the symbol Fe?",
+    "difficulty": 2,
+    "answers": [
+      {
+        "text": "iron",
+        "isCorrect": true
+      },
+      {
+        "text": "copper",
+        "isCorrect": false
+      },
+      {
+        "text": "silver",
+        "isCorrect": false
+      },
+      {
+        "text": "lead",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "text": "Which function in JS is used to output text to the screen?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "text": "print()",
+        "isCorrect": false
+      },
+      {
+        "text": "console.log()",
+        "isCorrect": true
+      },
+      {
+        "text": "write()",
+        "isCorrect": false
+      },
+      {
+        "text": "log()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "text": "Which symbol is used to indicate the end of a line in JavaScript?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "text": ";",
+        "isCorrect": true
+      },
+      {
+        "text": ":",
+        "isCorrect": false
+      },
+      {
+        "text": ",",
+        "isCorrect": false
+      },
+      {
+        "text": ".",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "text": "Which operator is used to compare values for equality in JavaScript?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "text": "==",
+        "isCorrect": true
+      },
+      {
+        "text": "===",
+        "isCorrect": false
+      },
+      {
+        "text": "=",
+        "isCorrect": false
+      },
+      {
+        "text": "!=",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "text": "What is the difference between null and undefined in JavaScript?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "text": "They are the same thing",
+        "isCorrect": false
+      },
+      {
+        "text": "null is the absence of a value, while undefined means a variable has been declared but has not been assigned a value",
+        "isCorrect": true
+      },
+      {
+        "text": "null is a primitive data type, while undefined is not",
+        "isCorrect": false
+      },
+      {
+        "text": "null can be converted to a boolean, while undefined cannot",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "text": "What does the this keyword refer to in JavaScript?",
+    "difficulty": 3,
+    "answers": [
+      {
+        "text": " The global object",
+        "isCorrect": false
+      },
+      {
+        "text": "The parent function",
+        "isCorrect": false
+      },
+      {
+        "text": " The current object",
+        "isCorrect": true
+      },
+      {
+        "text": "The window object",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "text": "What is the activation function used in a convolutional neural network? Take a close look at the answers...",
+    "difficulty": 4,
+    "answers": [
+      {
+        "text": "SiGmEiD",
+        "isCorrect": false
+      },
+      {
+        "text": "TaNh",
+        "isCorrect": false
+      },
+      {
+        "text": "ReLU",
+        "isCorrect": true
+      },
+      {
+        "text": "LeAkY ReLU",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "text": "What is the purpose of a dropout layer in a neural network? Take a close look at the answers...",
+    "difficulty": 4,
+    "answers": [
+      {
+        "text": "To udd noise to the input data",
+        "isCorrect": false
+      },
+      {
+        "text": "To randomly drop out input units during training to prevent overfitting",
+        "isCorrect": true
+      },
+      {
+        "text": "To pruvent vanishing gradients",
+        "isCorrect": false
+      },
+      {
+        "text": "To provent exploding gradients",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "text": "Did you enjoy the game?",
+    "difficulty": 5,
+    "answers": [
+      {
+        "text": "No, questions were to difficult",
+        "isCorrect": false
+      },
+      {
+        "text": "No, the site is poorly сoded",
+        "isCorrect": false
+      },
+      {
+        "text": "Um, well I don't know...",
+        "isCorrect": false
+      },
+      {
+        "text": "Yes, everything was fine!",
+        "isCorrect": true
+      }
+    ]
+  }
+]
