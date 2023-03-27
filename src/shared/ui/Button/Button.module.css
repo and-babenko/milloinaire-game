@@ -1,0 +1,36 @@
+.button {
+  width: 296px;
+  height: 64px;
+
+  background-color: var(--color-blue);
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: var(--font-semibold);
+  font-size: var(--font-button);
+  line-height: 116%;
+  color: #fff;
+
+  transition: all var(--transition) ease-in
+}
+
+.button:hover {
+  background-color: var(--color-lightblue);
+}
+
+.button:active {
+  background-color: var(--color-extraDarkBlue);
+}
+
+@media screen and (max-width: 650px) {
+  .button {
+    width: 288px;
+    height: 48px;
+  }
+}

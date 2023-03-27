@@ -1,0 +1,98 @@
+.roundContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  height: 40px;
+  background-color: inherit;
+
+  --polygon-round-margin: 16px;
+
+  --calculated-clip-path: polygon(0 50%,
+      var(--polygon-round-margin) 100%,
+      calc(100% - var(--polygon-round-margin)) 100%,
+      100% 50%,
+      calc(100% - var(--polygon-round-margin)) 0%,
+      var(--polygon-round-margin) 0%)
+}
+
+.roundContainer::before,
+.roundContainer::after {
+  position: absolute;
+  content: '';
+  width: 10000px;
+  height: 1px;
+  background-color: var(--color-black40);
+  top: 50%;
+  z-index: 0;
+}
+
+.roundContainer::before {
+  left: 0px;
+}
+
+.roundContainer::after {
+  right: 0px;
+}
+
+.roundBorder {
+  border: 1px solid var(--color-black40);
+  background-color: var(--color-black40);
+
+  width: 240px;
+  height: 100%;
+  z-index: 1;
+
+  clip-path: var(--calculated-clip-path);
+}
+
+.roundContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 var(--polygon-round-margin);
+  clip-path: var(--calculated-clip-path);
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--color-white);
+  color: var(--color-black100);
+  font-size: var(--font-button);
+}
+
+.roundContainer.active::after,
+.roundContainer.active::before {
+  background-color: var(--color-lightblue);
+}
+
+.roundContainer.active .roundBorder {
+  border: 1px solid var(--color-lightblue);
+  background-color: var(--color-lightblue);
+}
+
+.roundContainer.active .roundContent {
+  background-color: var(--color-lightblue);
+  color: var(--color-white)
+}
+
+.roundContainer.passed .roundContent {
+  color: var(--color-black40)
+}
+
+@media screen and (max-width: 1024px) {
+  .roundBorder {
+    width: unset;
+    width: 100%;
+    max-width: 240px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .roundContainer {
+    height: 32px;
+  }
+}

@@ -1,0 +1,50 @@
+:root {
+
+  /*Main colors*/
+  --color-white: #fff;
+  --color-extraDarkBlue: #003B63;
+  --color-darkBlue: rgb(0, 73, 115);
+  --color-darkblueOpacity: rgba(0, 74, 117, 0.05);
+  --color-blue: #1E6A8E;
+  --color-lightblue: #3891B1;
+
+  --color-orange5: #e2dfdc;
+  --color-black40: #D0D0D8;
+  --color-question-bg: #F5F5F7;
+
+  /*Answers btn colors*/
+  --color-red-5: #FDEEED;
+  --color-red-100: #EC6259;
+  --color-green-5: #E6FAEA;
+  --color-green-100: #47D867;
+  --color-orange-5: #FFF3EB;
+  --color-orange-100: #FF8B37;
+
+  /*Typography*/
+  --black-100: #1C1C21;
+  --black-100-opacity: rgb(28, 28, 33, 0.5);
+  --font-headline: 3.5rem;
+  --font-button: 1.25rem;
+  --font--questionTitle: 2rem;
+
+  --font-regular: 400;
+  --font-semibold: 600;
+
+  --transition: 0.1s;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --font-headline: 2.5rem;
+    --font-button: 1rem;
+    --font--questionTitle: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  :root {
+    --font-headline: 2rem;
+    --font-button: 0.875rem;
+    --font--questionTitle: 1.125rem;
+  }
+}
