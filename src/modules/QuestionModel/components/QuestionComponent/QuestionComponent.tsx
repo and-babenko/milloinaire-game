@@ -9,7 +9,7 @@ import {
 } from '../../store/rulesSlice';
 import styles from './QuestionComponent.module.css';
 
-const delayTimer = 100;
+const delayTimer = 1500;
 
 function QuestionComponent() {
   const dispatch = useDispatch();
