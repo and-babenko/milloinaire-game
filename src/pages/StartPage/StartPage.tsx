@@ -10,6 +10,7 @@ import {
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router';
 import { startNewGame } from 'modules/QuestionModel/store/rulesSlice';
+import Footer from 'components/Footer';
 import styles from './StartPage.module.css';
 
 function HeaderText({ path }: { path: string }): JSX.Element {
@@ -66,16 +67,21 @@ function StartPage() {
   };
 
   return (
-    <div className={styles.startPage}>
-      {combinedLoading === 'pending' ? <Spinner /> : ''}
-      <div className={styles.container}>
-        <img src={hand} className={styles.image} alt="Millionaire Game" />
-        <div className={styles.content}>
-          <HeaderText path={location} />
-          <Button onClick={btnHandler} direction="/questions">{location === '/results' ? 'Try Again' : 'Start'}</Button>
+    <>
+      <div className={styles.startPage}>
+        {combinedLoading === 'pending' ? <Spinner /> : ''}
+        <div className={styles.container}>
+          <img src={hand} className={styles.image} alt="Millionaire Game" />
+          <div className={styles.content}>
+            <HeaderText path={location} />
+            <Button onClick={btnHandler} direction="/questions">
+              {location === '/results' ? 'Try Again' : 'Start'}
+            </Button>
+          </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 

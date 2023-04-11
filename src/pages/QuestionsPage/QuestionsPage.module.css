@@ -34,14 +34,14 @@
   display: none;
 }
 
-.showSidebar>.roundsContainer {
+.showSidebar > .roundsContainer {
   width: 100%;
   transform: translateX(0);
 }
 
 @media screen and (min-width: 1440px) {
   .roundsContainer {
-    width: calc((100% - var(--question-container)) /2);
+    width: calc((100% - var(--question-container)) / 2);
   }
 }
 
@@ -70,7 +70,7 @@
   }
 
   .roundsContainer {
-    transition: all .5s ease-in;
+    transition: all 0.5s ease-in;
     position: absolute;
     top: 0px;
     right: 0px;
