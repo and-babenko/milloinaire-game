@@ -6,7 +6,7 @@ https://andbabenko-milloinaire-game.vercel.app
 
 - To try a different approach in development. After receiving a list of requirements before starting development, specify the requirements, plan the entire structure and then start development, creating a foundation for further functionality expansion.
 - Practice creating custom controls (with clip-path: polygon) and integrating them into the adaptive design.
-- Try to write in pure CSC without preprocessors.
+- Try to write in pure CSS without preprocessors.
 - Try to use ESLint Airbnb config.
 
 # Recieved requirements:
